@@ -16,3 +16,7 @@ create table pessoa (
     foreign key (idnivel) 
 		references nivel(idnivel)
 );
+
+
+insert into nivel(idnivel, descricao) values (1, 'admin');
+insert into nivel(idnivel, descricao) values (2, 'normal');
