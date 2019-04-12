@@ -103,7 +103,7 @@ public class ExcluirGUI extends JFrame {
 				
 				String email = textField.getText();
 				String senha = lblSenha.getText();
-				if(controladoraPessoa.validarPessoaVO(email,senha) == "") {
+				if(controladoraPessoa.validarPessoaVO(email,senha) == "validado") {
 					controladoraPessoa.excluirPessoaVOController((PessoaVO) cbxPessoaVO.getSelectedItem());
 					mensagem = "Usuario excuido com sucesso";
 				}else {

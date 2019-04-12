@@ -74,7 +74,7 @@ public class ControladoraPessoa {
 		if(this.validar(email) && (this.validar(senha))) {
 			if(pessoaDAO.validarEmail(email)) {
 				if(pessoaBO.validarPessoaBO(email, senha).getNivel().getId() == 1) {
-					mensagem = "";
+					mensagem = "validado";
 				} else {
 					mensagem = "falta nivel necessario(ADMIN)";
 				}
