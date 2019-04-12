@@ -62,7 +62,7 @@ public class ExcluirGUI extends JFrame {
 		contentPane.setLayout(null);
 
 		JLabel lblSelecionarCampoPara = new JLabel("Selecionar campo para exclus\u00E3o:");
-		lblSelecionarCampoPara.setBounds(45, 35, 172, 14);
+		lblSelecionarCampoPara.setBounds(45, 35, 295, 14);
 		contentPane.add(lblSelecionarCampoPara);
 
 		JComboBox cbxPessoaVO = new JComboBox();
