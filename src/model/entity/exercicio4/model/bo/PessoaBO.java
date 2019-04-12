@@ -35,7 +35,7 @@ public class PessoaBO {
 		}
 
 		if (mensagem == "") {
-			PessoaVO pessoaVO = new PessoaVO();
+			PessoaVO pessoaVO = new PessoaVO(nome, email, senha, nivel);
 
 			int persistencia = pessoaDAO.cadastrarPessoaDAO(pessoaVO);
 

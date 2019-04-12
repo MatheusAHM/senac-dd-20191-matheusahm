@@ -7,13 +7,13 @@ public class PessoaVO {
 	private String email;
 	private String senha;
 	private NivelVO nivel;
-
-	public PessoaVO(int id, String nome, String email, String senha) {
+	
+	public PessoaVO(String nome, String email, String senha, NivelVO nivel) {
 		super();
-		this.id = id;
 		this.nome = nome;
 		this.email = email;
 		this.senha = senha;
+		this.nivel = nivel;
 	}
 
 

@@ -38,8 +38,8 @@ public class PessoaDAO {
 		Connection conn = Banco.getConnection();
 		Statement stmt = Banco.getStatement(conn);
 		int resultado = 0;
-		String query = "INSERT INTO pessoa (nome, email, senha, idnivel) VALUES ('" + pessoaVO.getNome() + "', "
-				+ pessoaVO.getEmail() + "', " + pessoaVO.getSenha() + "'," + pessoaVO.getNivel().getId() + ")";
+		String query = "INSERT INTO pessoa (nome, email, senha, idnivel) VALUES ('" + pessoaVO.getNome() + "', '"
+				+ pessoaVO.getEmail() + "', '" + pessoaVO.getSenha() + "'," + pessoaVO.getNivel().getId() + ")";
 		try {
 			resultado = stmt.executeUpdate(query);
 		} catch (SQLException e) {
@@ -210,7 +210,7 @@ public class PessoaDAO {
 		Connection conn = Banco.getConnection();
 		Statement stmt = Banco.getStatement(conn);
 		ResultSet resultado = null;
-		String query = "SELECT * FROM usuario WHERE UPPER(email) = '" + email.toUpperCase() + "'";
+		String query = "SELECT * FROM pessoa WHERE email = '" + email + "'";
 		try {
 			resultado = stmt.executeQuery(query);
 			if (resultado.next()){
