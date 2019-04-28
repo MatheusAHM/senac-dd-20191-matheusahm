@@ -1,4 +1,4 @@
-package model.entity.exercicio4.model.dao;
+package model.entity.exercicio5.model.dao;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -7,8 +7,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import model.entity.exercicio4.model.vo.NivelVO;
-import model.entity.exercicio4.model.vo.PessoaVO;
+import model.entity.exercicio5.model.vo.NivelVO;
+import model.entity.exercicio5.model.vo.PessoaVO;
 
 public class PessoaDAO {
 

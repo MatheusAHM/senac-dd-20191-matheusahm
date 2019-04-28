@@ -1,11 +1,11 @@
-package model.entity.exercicio4.controller;
+package model.entity.exercicio5.controller;
 
 import java.util.ArrayList;
 
-import model.entity.exercicio4.model.bo.PessoaBO;
-import model.entity.exercicio4.model.dao.PessoaDAO;
-import model.entity.exercicio4.model.vo.NivelVO;
-import model.entity.exercicio4.model.vo.PessoaVO;
+import model.entity.exercicio5.model.bo.PessoaBO;
+import model.entity.exercicio5.model.dao.PessoaDAO;
+import model.entity.exercicio5.model.vo.NivelVO;
+import model.entity.exercicio5.model.vo.PessoaVO;
 
 public class ControladoraPessoa {
 

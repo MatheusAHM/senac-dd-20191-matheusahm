@@ -1,11 +1,11 @@
-package model.entity.exercicio4.model.bo;
+package model.entity.exercicio5.model.bo;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import model.entity.exercicio4.model.dao.PessoaDAO;
-import model.entity.exercicio4.model.vo.NivelVO;
-import model.entity.exercicio4.model.vo.PessoaVO;
+import model.entity.exercicio5.model.dao.PessoaDAO;
+import model.entity.exercicio5.model.vo.NivelVO;
+import model.entity.exercicio5.model.vo.PessoaVO;
 
 public class PessoaBO {
 
@@ -98,4 +98,5 @@ public class PessoaBO {
 
 		return pessoaVO;
 	}
+
 }
