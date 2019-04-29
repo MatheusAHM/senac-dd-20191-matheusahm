@@ -73,6 +73,9 @@ public class Principal extends JFrame {
 				cadastroCliente = new CadastroCliente();
 				desktopPane.add(cadastroCliente);
 				cadastroCliente.show();
+				if (cadastroCliente.isVisible() == true) {
+					cadastrarCliente.setEnabled(false);
+				}
 			}
 		});
 		cadastrarCliente.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_1, InputEvent.CTRL_MASK));
@@ -104,6 +107,9 @@ public class Principal extends JFrame {
 				listarProduto = new ListarProduto();
 				desktopPane.add(listarPr);
 				listarProduto.show();
+				if (listarProduto.isVisible() == true) {
+					listarPr.setEnabled(false);
+				}
 			}
 		});
 		listarPr.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_2, InputEvent.SHIFT_MASK));
@@ -117,6 +123,9 @@ public class Principal extends JFrame {
 				excluirProduto = new ExcluirProduto();
 				desktopPane.add(excluirProduto);
 				excluirProduto.show();
+				if (excluirProduto.isVisible() == true) {
+					exProduto.setEnabled(false);
+				}
 			}
 		});
 		exProduto.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_1, InputEvent.SHIFT_MASK));
@@ -130,6 +139,9 @@ public class Principal extends JFrame {
 				alterarProduto = new AlterarProduto();
 				desktopPane.add(alterarProduto);
 				alterarProduto.show();
+				if (alterarProduto.isVisible() == true) {
+					altProduto.setEnabled(false);
+				}
 			}
 		});
 		altProduto.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_3, InputEvent.SHIFT_MASK));
