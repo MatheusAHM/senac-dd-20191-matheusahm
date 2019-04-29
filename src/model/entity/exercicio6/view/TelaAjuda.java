@@ -55,7 +55,8 @@ public class TelaAjuda extends JFrame {
 
 		JTextPane txtpnHttpssupportmicrosoftcomptbr = new JTextPane();
 		txtpnHttpssupportmicrosoftcomptbr.setEditable(false);
-		txtpnHttpssupportmicrosoftcomptbr.setText("https://support.microsoft.com/pt-br");
+		txtpnHttpssupportmicrosoftcomptbr
+				.setText("<html><a href=\"www.google.com\">https://support.microsoft.com/pt-br</a></html>");
 		contentPane.add(txtpnHttpssupportmicrosoftcomptbr, "cell 3 3,grow");
 	}
 

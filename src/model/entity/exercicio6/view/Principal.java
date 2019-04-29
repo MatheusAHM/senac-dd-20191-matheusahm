@@ -52,6 +52,7 @@ public class Principal extends JFrame {
 	 * Create the frame.
 	 */
 	public Principal() {
+		JDesktopPane desktopPane = new JDesktopPane();
 		setIconImage(Toolkit.getDefaultToolkit()
 				.getImage(Principal.class.getResource("/model/entity/exercicio6/icons/icons8-gr\u00E1fico.png")));
 		setTitle("Menu Cadastral");
@@ -189,7 +190,6 @@ public class Principal extends JFrame {
 		JLabel lblSistemaDeGerenciamentoDeVendas = new JLabel("Sistema de gerenciamento de vendas");
 		contentPane.add(lblSistemaDeGerenciamentoDeVendas, "cell 0 0,alignx center");
 
-		JDesktopPane desktopPane = new JDesktopPane();
 		desktopPane.setBackground(Color.WHITE);
 		contentPane.add(desktopPane, "cell 0 1,grow");
 	}
